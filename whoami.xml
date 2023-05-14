@@ -7,9 +7,9 @@
     </Overview>
     <Registry>https://hub.docker.com/r/traefik</Registry>
     <Repository>traefik/whoami</Repository>
-    <Support>https://github.com/FirbyKirby/unraid-docker-templates/issues</Support>
-    <Project>https://github.com/FirbyKirby/unraid-docker-templates/</Project>
-    <Icon>https://github.com/FirbyKirby/unraid-docker-templates/icons/whoami.png</Icon>
+    <Support>https://github.com/traefik/whoami/issues</Support>
+    <Project>https://github.com/traefik/whoami</Project>
+    <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/1200px-Blue_question_mark_icon.svg.png</Icon>
     <Category>Network:Proxy Network:Web </Category>
     <TemplateURL/>
     <DonateText/>
@@ -17,7 +17,7 @@
     <Privileged>false</Privileged>
     <Network>bridge</Network>
     <WebUI>http://[IP]:[PORT:80]</WebUI>
-    <ExtraParams/>
+    <ExtraParams>--hostname $HOSTNAME</ExtraParams>
     <PostArgs/>
     <Config
         Type="Port"
