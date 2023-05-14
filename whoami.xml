@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+    <Name>whoami</Name>
+    <Overview>
+    Tiny Go webserver that prints OS information and HTTP request to output.
+    NOTE: This image has no termial. It's extremely simple. Info on http commands you can pass are located on the project page. https://github.com/traefik/whoami
+    </Overview>
+    <Registry>https://hub.docker.com/r/traefik</Registry>
+    <Repository>traefik/whoami</Repository>
+    <Support>https://github.com/FirbyKirby/unraid-docker-templates/issues</Support>
+    <Project>https://github.com/FirbyKirby/unraid-docker-templates/</Project>
+    <Icon>https://github.com/FirbyKirby/unraid-docker-templates/icons/whoami.png</Icon>
+    <Category>Network:Proxy Network:Web </Category>
+    <TemplateURL/>
+    <DonateText/>
+    <DonateLink/>
+    <Privileged>false</Privileged>
+    <Network>bridge</Network>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <ExtraParams/>
+    <PostArgs/>
+    <Config
+        Type="Port"
+        Name="Webserver Port"
+        Target="80"
+        Default="2001"
+        Mode="tcp"
+        Description="This is the webserver port. It is the only interface into the container."
+        Display="always"
+        Required="true"</Config>
+ </Container>
